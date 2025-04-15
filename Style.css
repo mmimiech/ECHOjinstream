@@ -1,0 +1,100 @@
+body {
+    font-family: 'Prompt', Arial;
+    background-color: #FFFFCC;
+    text-align: center;
+    padding: 80px;
+    transition: background-color 0.5s ease;
+  }
+  
+  h1 {
+    color: #0b23ff;
+  }
+  
+  .question {
+    font-size: 36px;
+    margin-bottom: 36px;
+  }
+  
+  .btn {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 24px;
+    background-color: #3cff00;
+    color: rgb(68, 0, 255);
+    border: none;
+    border-radius: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 250px;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #93e9ff;
+    transform: scale(1.05);
+  }
+  
+  .result {
+    margin-top: 30px;
+    font-size: 36px;
+    color: #ff00b3;
+    transition: opacity 0.5s ease;
+  }
+  
+  .cute-box {
+    background: linear-gradient(135deg, #ffe6f7, #e6f0ff);
+    border: 3px dashed #ff99cc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(255, 153, 204, 0.5);
+    animation: popUp 0.6s ease;
+  }
+  
+  .cute-box img {
+    width: 100%;
+    border-radius: 16px;
+    border: 4px dashed #ff99cc;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px rgba(255, 153, 204, 0.7);
+  }
+  
+  .cute-box p {
+    font-size: 20px;
+    color: #99004d;
+    margin-bottom: 10px;
+  }
+  
+  .cute-box button {
+    background-color: #ffccff;
+    color: #660066;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(102, 0, 102, 0.3);
+  }
+  
+  .cute-box button:hover {
+    background-color: #ffe6ff;
+  }
+  
+  @keyframes popUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .floating-heart {
+    position: fixed;
+    bottom: -50px;
+    animation: floatUp 6s infinite ease-in;
+    font-size: 30px;
+    opacity: 0.7;
+  }
+  
+  @keyframes floatUp {
+    0% { bottom: -50px; opacity: 0.7; }
+    100% { bottom: 100%; opacity: 0; }
+  }
